@@ -16,6 +16,9 @@ def right():
     turtle.setheading(0)
     turtle.forward(50)
     turtle.stamp()
+def restart():
+    turtle.reset()
+    turtle.stamp()
 
 turtle.shape("turtle")
 turtle.stamp()
@@ -23,6 +26,7 @@ turtle.onkey(up, 'w')
 turtle.onkey(down, 's')
 turtle.onkey(left, 'a')
 turtle.onkey(right, 'd')
+turtle.onkey(restart, 'Escape')
 turtle.listen()
 turtle.mainloop()
 
